@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Test task</title>
+
+</head>
+
+<body>
+    <section class="license">
+        <div class="margin_block"></div>
+        <div class="container">
+            <div id="choose" class="license_plan">
+                <div id="Selected plan: #1" class="license_item" data-="path1">
+                    <input type="radio" class="radio" id="radio-1" name="radio" value="13" checked />
+                    <label class="license_title" for="radio-1">license plan #1</label>
+                    <p class="license_sign">$13 per license</p>
+                </div>
+                <div id="Selected plan: #2" class="license_item" data-="path2">
+                    <input type="radio" class="radio" id="radio-2" name="radio" value="22" />
+                    <label class="license_title" for="radio-2">license plan #2</label>
+                    <p class="license_sign">$22 per license
+                    </p>
+                </div>
+                <div id="Selected plan: #3" class="license_item" data-="path3">
+                    <input type="radio" class="radio" id="radio-3" name="radio" value="34" />
+                    <label class="license_title" for="radio-3">license plan #3</label>
+                    <p class="license_sign">$34 per license</p>
+                </div>
+            </div>
+
+            <div class="number_license">
+                <div class="number_license_item">
+                    <p>Number of license</p>
+                    <select name="" id="select" class="quantity">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="total_item">
+                    <div class="total_sum">
+                        <h1 class="total_title">total: <div class="sum" id="sum">0$</div><span class="small">us</span>
+                        </h1>
+                    </div>
+                    <button class="button" type="button">buy now</button>
+                    <p id="Selected_plan">Selected plan: #1</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>

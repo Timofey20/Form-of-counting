@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(/Fonts/Bebas/BebasNeue\ Regular.ttf);
+}
+
+/*licence*/
+
+.license {
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+.margin_block {
+    padding-top: 30px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.license_plan {
+    padding: 10px;
+    border-bottom: #9e9e9e54 solid 1px;
+}
+
+.license_item {
+    font-family: Bebas;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    color: #858585;
+    border: 1px solid rgba(238, 238, 238, 0.1);
+    ;
+    transition: all .2s;
+}
+
+.license_title {
+    max-width: 370px;
+}
+
+.license_item:hover {
+    border: 1px solid rgba(22, 147, 165, 0.5);
+    box-shadow: inset 0px 0px 500px rgba(22, 147, 165, 0.2);
+}
+
+.active {
+    border: 1px solid rgba(22, 147, 165, 0.5);
+    box-shadow: inset 0px 0px 100px rgba(22, 147, 165, 0.2);
+    z-index: 100;
+    background-color: #333333;
+}
+
+.license_item label {
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+.license_sign {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* test */
+
+.radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+}
+
+.radio+label {
+    position: relative;
+    padding: 0 0 0 45px;
+    cursor: pointer;
+}
+
+.radio+label:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 5px solid #CDD1DA;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.radio+label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #1693A5;
+    opacity: 0;
+    transition: .2s;
+}
+
+.radio:checked+label:after {
+    opacity: 1;
+}
+
+.radio:focus+label::before {
+    border-color: #025D8C;
+    transition: .2s;
+}
+
+.radio:focus:not(:checked)+label::before {
+    border-color: #025D8C;
+    transition: .2s;
+}
+
+.radio:checked+label::before {
+    border-color: #025D8C;
+    transition: .2s;
+}
+
+/* number_license_item */
+
+.number_license {
+    border-bottom: 1px solid #9e9e9e54;
+}
+
+.number_license_item {
+    padding: 0px;
+    max-width: 300px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #696969;
+    vertical-align: middle;
+}
+
+.number_license_item p {
+    align-items: center;
+}
+
+.quantity {
+    margin-left: 10px;
+    padding: 0px 3px;
+}
+
+.quantity:hover {
+    box-shadow: 0px 0px 3px rgb(13, 0, 197);
+}
+
+.quantity:focus {
+    outline: none;
+}
+
+/* total */
+
+.total_item {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.total_sum {
+    padding: 10px 0px 20px 0px;
+}
+
+.total_title {
+    font-family: Bebas;
+    display: flex;
+    justify-content: center;
+}
+
+.sum {
+    padding-left: 5px;
+    color: #025D8C;
+}
+
+.small {
+    font-size: 18px;
+    color: #025D8C;
+}
+
+.total_item button {
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(13, 180, 13);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.total_item button:hover {
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .5);
+}
+
+.total_item button:focus {
+    outline: none;
+}
+
+.total_item p {
+    padding: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #025D8C;
+}
